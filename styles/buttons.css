@@ -88,11 +88,15 @@
 }
 
 .button-trash {
-    background-image: url('/assets/trash.png');
-    background-position: center;
+    overflow: hidden;
     cursor: pointer;
-    height: 20px;
-    width: 20px;
+    width: 26px;
+    height: 26px;
     border: none;
     cursor: pointer;
+}
+
+.button-trash img {
+    height: 100%;
+    width: 100%;
 }

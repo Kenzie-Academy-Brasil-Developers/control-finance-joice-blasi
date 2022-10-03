@@ -16,6 +16,7 @@ function addFinancialRecord(list) {
     const div = document.createElement("div");
     const pType = document.createElement("p");
     const buttonTrash = document.createElement("button");
+    const img = document.createElement('img');
 
     li.classList.add(
       "item-registered-value",
@@ -36,6 +37,8 @@ function addFinancialRecord(list) {
       "padding-5"
     );
     buttonTrash.classList.add("button-trash");
+    img.src = "/assets/trash.png";
+    img.alt = "Trash";
 
     pValue.innerText = `R$ ${element.value}`;
     if (element.categoryID === 1) {
@@ -58,6 +61,7 @@ function addFinancialRecord(list) {
     ul.appendChild(li);
     li.append(pValue, div);
     div.append(pType, buttonTrash);
+    buttonTrash.appendChild(img);
     addValueSum(insertedValues);
   });
 }
