@@ -1,0 +1,14 @@
+.input-modal {
+    border: 1.5px solid var(--color-grey-3);
+    border-radius: var(--radius-1);
+    height: 2.75rem;
+    outline: none;
+}
+
+.input-modal::placeholder {
+    color: color-grey-2;
+}
+
+.input-modal:focus {
+    border: 1.5px solid var(--color-brand-1);
+}

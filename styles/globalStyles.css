@@ -31,8 +31,8 @@
 
   --font-line-height-1: 150%;
 
-  --radius-1: 0.5rem;
-  --radius-2: 0.25rem;
+  --radius-1: 0.5rem; /* 8px */
+  --radius-2: 0.25rem; /* 4px */
 
   --animation-duration: 0.2s;
   --animation-type: ease;
@@ -47,12 +47,26 @@ body {
 
 .container {
   max-width: 43rem;
-  margin: 0 auto;
+  margin: 0 1rem;
 }
 
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   .container {
     max-width: 43rem;
-    margin: 0 1rem;
+    margin: 0 auto;
+  }
+
+  .financial-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .financial-summary h2 {
+    margin-bottom: 0;
+  }
+
+  .width-50 {
+    max-width: 25%;
   }
 }

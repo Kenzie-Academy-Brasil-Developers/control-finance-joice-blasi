@@ -1,1 +1,27 @@
-/* Desenvolva a estilização da sua página aqui */
+.sum-values {
+    border-radius: var(--radius-1);
+    border: 1.5px solid var(--color-grey-4);
+    padding: 0.8rem 1rem;
+}
+
+.no-registered-values {
+    background-color: var(--color-grey-5);
+    border: 1.5px dashed var(--color-grey-3);
+    border-radius: var(--radius-1);
+}
+
+.div-modal {
+    border-radius: var(--radius-1);
+    width: 430px;
+    max-width: 90%;
+    height: fit-content;
+}
+
+.item-registered-value {
+    border: 1.5px solid var(--color-grey-5);
+    border-radius: var(--radius-1);
+}
+
+.type-item {
+    border-radius: var(--radius-2);
+}
